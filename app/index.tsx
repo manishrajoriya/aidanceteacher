@@ -1,13 +1,24 @@
 
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { meditations } from '@/constants/data';
+
+import { MeditationItem } from '@/components/MeditationItem';
+
+
 
 const Index = () => {
     return (
-        <View>
-            <Text>Index</Text>
-        </View>
+       <>
+        
+        <FlatList
+            data={meditations}
+            contentContainerStyle={ {gap: 20, padding: 20 } }
+            renderItem={({item}) => <MeditationItem meditation={item} />}
+        />
+       
+       </>
     );
 }
 
