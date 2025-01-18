@@ -2,9 +2,7 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { meditations } from '@/constants/data';
 import { Meditation } from '@/types';
 import AntDesign from '@expo/vector-icons/AntDesign';
-
-
-
+import Onbording from './onbording';
 
 
 export function MeditationItem({meditation}: {meditation:Meditation}) {

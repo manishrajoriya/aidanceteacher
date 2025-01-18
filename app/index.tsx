@@ -2,22 +2,14 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { meditations } from '@/constants/data';
 
-import { MeditationItem } from '@/components/MeditationItem';
-
+import Onbording from '@/components/onbording';
 
 
 const Index = () => {
     return (
        <>
-        
-        <FlatList
-            data={meditations}
-            contentContainerStyle={ {gap: 20, padding: 20 } }
-            renderItem={({item}) => <MeditationItem meditation={item} />}
-        />
-       
+       <Onbording/>
        </>
     );
 }
